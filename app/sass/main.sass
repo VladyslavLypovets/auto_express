@@ -1,0 +1,424 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+body
+	opacity: 1
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+.container
+  width: 928px
+p
+	margin: 0
+h2
+	font-family: $bold-font
+	font-size: 22px
+	margin-top: 0
+	margin-bottom: 16px
+h3
+	font-family: $semi-font
+	font-size: 22px
+	margin-top: 0
+	margin-bottom: 24px
+h4
+	font-family: $semi-font
+	margin-bottom: 28px
+h4 span
+	margin-left: 15px
+	color: #FFC107
+.panel-body
+	padding: 16px
+	background: #FBFBFB
+	border: 1px solid $border-color
+	border-radius: 4px
+.datepicker
+	padding: 0
+.input-lg, select.input-lg
+	height: 40px
+	padding: 0 16px
+.checkbox label, .radio label
+	font-size: 13px
+	font-family: $semi-font
+label
+	font-family: $semi-font
+	margin-bottom: 8px
+	font-size: 14px
+header
+	background: $default-color
+	padding: 6px 0
+	color: $white
+	font-family: $default-font
+.fa-location-arrow
+	color: $gray-color
+.top-line
+	padding: 17px 0 17px 0
+.navbar-brand
+	height: auto
+.navbar-default
+	background: $white
+	border: none
+	box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.08)
+.navbar
+	border-radius: 0
+	margin-bottom: 0
+.navbar-nav
+	margin: 0 -15px
+.navbar-default .navbar-nav>li
+	padding: 26px 10px
+.navbar-default .navbar-nav>li>a
+	font-family: $semi-font
+	font-size: 15px
+	color: #202020
+	padding: 0
+	float: left
+.navbar-default .navbar-nav>li>a>i
+	margin-left: 10px
+	color: $gray-color
+	font-size: 16px
+.navbar-default .input-group
+	padding: 21px 0
+.navbar-default .input-group .btn-default
+	border-color: $border-color
+	border-left: none
+	&:hover
+		background-color: unset
+		border-color: $border-color
+.navbar-default .form-control
+	box-shadow: none
+	border-color: $border-color
+	border-right: none
+	&:focus
+		border-color: $border-color
+.navbar-default .input-group .btn-default i
+	color: #61A2B6
+.navbar-default .text-right
+	padding: 18px 0
+.user-name
+	color: $default-color
+	font-size: 16px
+.user-name i
+	margin-left: 5px
+	font-size: 18px
+	color: $default-color
+.money
+	color: $default-color
+	font-size: 14px
+	margin-right: 5px
+	&:hover
+		color: $default-color
+		text-decoration: none
+.mails
+	color: $red-color
+	font-size: 14px
+	margin-right: 10px
+	&:hover
+		color: $red-color
+		text-decoration: none
+.breadcrumb
+	background: none
+	padding: 0
+	margin: 30px 0
+.breadcrumb>li+li
+	&:before
+		padding: 0 10px
+		font-family: $font-awesome
+		content: '\f105'
+		color: $default-color
+.breadcrumb a
+	color: $default-color
+.breadcrumb li
+	color: $blue-color
+.datepicker .input-group-addon
+	background: #fff
+	border-color: $border-color
+	border-left-color: #fff
+.datepicker .form-control
+	border-right-color: #fff
+.form-control
+	box-shadow: none
+	border-color: $border-color
+.img-block ul
+	list-style: none
+	display: flex
+	justify-content: flex-start
+	li
+		position: relative
+		width: 80px
+		margin-right: 16px
+		a
+			padding: 0 5px
+			display: block
+			bottom: 8px
+			right: 8px
+			position: absolute
+			background: #343434
+			color: $white
+			border-radius: 2px
+.img-block
+	.form-group
+		margin-bottom: 0
+	.form-control
+		width: 96px
+		height: 100%
+		border-color: $border-color
+		background-color: $white
+		color: $gray-color
+		font-family: $semi-font
+.list-success
+	list-style: none
+	margin-bottom: 32px
+	li
+		position: relative
+		margin-bottom: 10px
+		font-size: 16px
+		font-family: $default-font
+		&::before
+			position: absolute
+			top: 5px
+			left: -30px
+			display: block
+			content: ' '
+			width: 12px
+			height: 12px
+			background: #fff
+			border: 3px solid $green-color
+			border-radius: 50%
+h5
+	font-size: 16px
+	font-family: $semi-font
+	margin: 0
+	margin-bottom: 16px
+.text-success
+	color: $green-color
+.text-muted
+	font-size: 12px
+	color: $color-muted
+	&:hover
+		color: $color-muted
+		text-decoration: none
+.text-danger
+	color: $red-color
+.list-danger
+	list-style: none
+	margin-bottom: 32px
+	li
+		position: relative
+		margin-bottom: 10px
+		font-size: 16px
+		font-family: $default-font
+		&::before
+			position: absolute
+			top: 0
+			left: -20px
+			display: block
+			content: '\f00d'
+			font-family: $font-awesome
+			color: $red-color
+dt
+	color: $default-color
+	font-family: $semi-font
+	font-size: 14px
+	margin-bottom: 8px
+dd
+	color: $default-color
+	font-size: 14px
+	font-family: $default-font
+.remarks ul, .tech-states ul
+	list-style: none
+	display: flex
+	justify-content: flex-start
+	padding-left: 0
+	li
+		position: relative
+		width: 64px
+		height: 64px
+		margin-right: 16px
+		a
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			color: $white
+			font-size: 18px
+			opacity: 0
+			transition: all 0.3s
+			width: 100%
+			height: 100%
+			&:hover
+				opacity: 1
+			i
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+a.text-danger
+	text-decoration: underline
+	transition: all 0.3s
+	font-family: $semi-font
+	&:hover
+		color: $red-color
+	i
+		margin-right: 8px
+.tech-states
+	.col-md-1
+		padding: 25px 0
+	.text-muted
+		font-size: 18px
+		margin-right: 15px
+.tech-states
+	label
+		font-family: $default-font
+		font-weight: 400
+.tech-states
+	.form-group
+		width: 70%
+textarea.form-control
+	height: 160px
+	resize: none
+.btn-lg
+	padding: 11px 41px
+	font-family: $semi-font
+	font-size: 14px
+	margin-left: 16px
+footer
+	margin-top: 64px
+	padding-top: 32px
+	padding-bottom: 20px
+	background: $default-color
+	.row
+		margin-top: 16px
+	p
+		font-size: 14px
+		font-family: $default-font
+		color: $color-muted
+	a
+		color: $white
+		font-size: 12px
+		font-family: $default-font
+		margin-bottom: 16px
+		display: block
+		transition: all 0.3s
+		&:hover
+			color: $white
+		img
+			margin: 0 auto
+	h5
+		font-size: 14px
+		color: $white
+		font-family: $semi-font
+	.list-style
+		a
+			color: unset
+			i.fa-circle
+					color: #535353
+
+a.mobile_link
+	text-decoration: underline
+	font-size: 14px
+	&:hover
+		text-decoration: none
+.pay
+	margin-bottom: 0
+	a
+		margin-bottom: 0
+	i
+		color: #fff
+		font-size: 36px
+.modal-title
+	color: $default-color
+	font-size: 21px
+	font-family: $bold-font
+.modal-body
+	label
+		color: $default-color
+		font-size: 14px
+		font-family: $semi-font
+		margin-top: 10px
+	ul
+		margin-bottom: 0
+	select
+		color: $default-color
+		font-size: 13px
+		font-family: $default-font
+	input.input-lg
+		height: 80px
+	li
+		position: relative
+		width: 64px
+		height: 64px
+		margin-right: 8px
+		padding: 0
+		a
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			color: #fff
+			font-size: 18px
+			opacity: 0
+			transition: all .3s
+			width: 100%
+			height: 100%
+			&:hover
+				opacity: 1
+			i
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+		a.add
+			position: unset
+			opacity: 1
+			display: flex
+			width: 100%
+			height: 100%
+			background: #fff
+			box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.16)
+			justify-content: center
+			align-items: center
+			color: $border-color
+			border-radius: 4px
+.modal-header, .modal-footer
+	border: none
+
+.modal-dialog
+	width: 439px
+.list-inline
+	li
+		padding: 0
+.panel
+	border: none
+	box-shadow: none
+
+
+
+
+@import "media" // Всегда в конце
